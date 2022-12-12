@@ -1,0 +1,23 @@
+table, th, td { 
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;   
+}
+
+.for-fist-p {
+    margin-left: 10px;
+}
+
+/* Не проходили, использовать для формирования расположения элементов (будет рассмотрено позже) */
+/* form {
+    display: inline-grid;
+} */
+
+/* Исключительно с целью демонстрации, не применения */
+/* input:invalid {
+    border: 10px solid red;
+}
+
+input:valid {
+    border: 2px solid blue;
+} */
