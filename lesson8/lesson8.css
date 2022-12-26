@@ -1,0 +1,36 @@
+* {
+	background: url(./img/corndog.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
+.lanscape {
+	width: 200px;
+	height: auto;
+	padding: 30px;
+	background: #FFFFFF;
+}
+
+.icon {
+	width: 200px;
+	height: auto;
+}
+
+.logo {
+	background-color: black;
+}
+
+.link {
+	display: block;
+	margin: 2em;
+	margin-bottom: 1em;
+}
+
+.intro {
+	padding: 2em;
+	background-image: url('../img/ball-basket-basketball-svgrepo-com.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-size: cover;
+}
