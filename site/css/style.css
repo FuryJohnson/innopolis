@@ -8,6 +8,11 @@ html {
     margin: 0;
 }
 
+.main-text {
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+}
 
 /* Header */
 
@@ -156,6 +161,21 @@ html {
     display: block;
 }
 
+.popup-close {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    border: 4px double #EA6113;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
 /* Main */
 
 .main {
@@ -166,8 +186,6 @@ html {
 }
 
 .main-heading {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
 }
@@ -198,6 +216,66 @@ em {
     color: rgba(207, 85, 16, 1);
 }
 
+.intro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-aside {
+
+}
+
+.blockquote {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    color: #646464;
+}
+
+.aside-italic {
+    color: #646464;
+}
+
+
+/* Students */
+
+.students {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.student {
+    padding-left: 50px;
+}
+
+.student-name {
+    display: block;
+    text-align: center;
+}
+
+.new-student {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: #3AA828;
+    color: #FFFFFF;
+    padding: 2px 6px 2px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    top: -336px;
+    left: 118px;
+}
+
+/* .student:nth-child(-n + 3) {
+    background-color: red;
+} */
 /* Footer */
 
 .footer {
@@ -230,11 +308,84 @@ em {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Contacts */
+
+.text-info {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+.phone-number {
+    margin-top: 24px;
+    text-decoration: underline;
+}
+
+.about-photo {
+    max-width: 1250px;
+    width: 100%;
+    height: auto;
+}
+
+.map {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 370px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+::grammar-error  {
+    text-decoration: underline red;
+    color: red;
+}
+
+
+.video {
+    border: 2px solid #EA5D21;
+}
+
 /* Media */
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
+    .main {
+        box-sizing: border-box;
+        padding: 0 2vw;
+    }
+
     .header{
-       width: 70%;
+      justify-content: center;
+      padding: 1em 16px;
+      gap: 1em;
+    }
+
+    .blockquote {
+        margin-left: 50px;
+    }
+
+    .blockquote::after {
+        margin-right: 50px;
+    }
+
+    .intro-text {
+        margin-bottom: 40px;
+    }
+
+    .login-input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .login-password {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: -30px;
+        right: 0px;
     }
 
     .site-menu {
